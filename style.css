@@ -1,0 +1,102 @@
+:root {
+  /* Variables */
+  /* ## Colors */
+
+  --clr-green: 75 94% 57%;
+
+  --clr-white: 0 0% 100%;
+
+  --clr-grey-700: 0 0% 20%;
+  --clr-grey-800: 0 0% 12%;
+  --clr-grey-900: 0 0% 8%;
+}
+/* Font Family */
+@font-face {
+  font-family: "Inter";
+  src: url(/assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+/* classes */
+/* bg colors */
+
+.bg-grey-700 {
+  background-color: hsl(var(--clr-grey-700));
+}
+.bg-grey-800 {
+  background-color: hsl(var(--clr-grey-800));
+}
+.bg-grey-900 {
+  background-color: hsl(var(--clr-grey-900));
+}
+
+/* colors */
+.white {
+  color: hsl(var(--clr-white));
+}
+.green {
+  color: hsl(var(--clr-green));
+}
+.grey {
+  color: hsl(var(--clr-white) / 0.7);
+}
+/* Fonts */
+.ff-inter {
+  font-family: "Inter";
+}
+/* layout */
+.grid {
+  display: grid;
+}
+body {
+  /* display: grid; */
+  height: 100vh;
+}
+
+.social__card {
+  gap: 1rem;
+  margin-inline: auto;
+  margin-top: 8rem;
+  padding: 1rem;
+  place-items: center;
+  border-radius: 1rem;
+  width: 330px;
+}
+.social__card-image {
+  width: 100px;
+}
+.social__card-image img {
+  border-radius: 50%;
+}
+.social__card-person {
+  font-size: 1.4rem;
+  display: grid;
+  gap: 0.2rem;
+  place-items: center;
+}
+.social__card-location {
+  font-size: 0.8rem;
+}
+.social__card-about {
+  font-size: 0.8rem;
+}
+.social__card-buttons {
+  display: grid;
+  grid-template-columns: 1fr;
+  font-size: 1rem;
+  gap: 1rem;
+  width: 95%;
+}
+.social__card-button {
+  color: hsl(var(--clr-white));
+  background-color: hsl(var(--clr-grey-700));
+  padding-block: 0.6rem;
+  border: 0;
+  border-radius: 0.5rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
