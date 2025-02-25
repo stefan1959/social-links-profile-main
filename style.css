@@ -52,10 +52,10 @@ body {
 }
 
 .social__card {
-  gap: 0.3rem;
+  gap: 1rem;
   margin-inline: auto;
   margin-block: 8rem;
-  padding: 1rem;
+  padding: 1.2rem;
   place-items: center;
   border-radius: 1rem;
   width: 330px;
@@ -82,22 +82,28 @@ body {
 .social__card-buttons {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 0.5rem;
+  gap: 1rem;
   width: 90%;
   padding-left: 0;
+}
+.social__card-buttons li {
+  display: grid;
   list-style: none;
+  text-align: center;
 }
 .social__card-button {
   color: hsl(var(--clr-white));
   background-color: hsl(var(--clr-grey-700));
-  width: 100%;
-  text-align: center;
+  border-radius: 0.3rem;
+  text-decoration: none;
   padding-block: 0.5rem;
   transition: 0.5s;
 }
-.social__card-button:hover {
+.social__card-button:hover,
+.social__card-button:focus {
   background-color: hsl(var(--clr-green));
   color: hsl(var(--clr-grey-900));
+  border: 0;
 }
 .social__card-button a {
   text-decoration: none;
@@ -108,5 +114,5 @@ body {
   text-align: center;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: hsl(var(--clr-green));
 }
